@@ -1,22 +1,11 @@
-#include <stdio.h>
-
+#include <unistd.h>
 /**
-* main - Entry point
+*main - Entry Point
 *
-* Return: Always 0 (Success)
+*Return: Always 0 (Sucess)
 */
 int main(void)
 {
-/* Print _putchar followed by a new line */
-putchar('_');
-putchar('p');
-putchar('u');
-putchar('t');
-putchar('c');
-putchar('h');
-putchar('a');
-putchar('r');
-putchar('\n');
-
+write(1, "_putchar\n", 9);
 return (0);
 }
