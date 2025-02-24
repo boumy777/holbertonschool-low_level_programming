@@ -1,17 +1,14 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * _islower - check the code.
+ * @c: The character to check
+ * Return: (1) if c is lowercase, (0) if otherwise
  */
-int main(void)
+int _islower(int c)
 {
-char c;
-c = 'a';
-printf("%c: %d\n", c, _islower(c));
-c = 'A';
-printf("%c: %d\n", c, _islower(c));
+if (c >= 97 && c <= 122)
+return (1);
+else
 return (0);
 }
