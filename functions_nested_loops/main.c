@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - check the code
@@ -7,6 +8,10 @@
  */
 int main(void)
 {
-print_alphabet_x10();
+char c;
+c = 'a';
+printf("%c: %d\n", c, _islower(c));
+c = 'A';
+printf("%c: %d\n", c, _islower(c));
 return (0);
-}
+}²
