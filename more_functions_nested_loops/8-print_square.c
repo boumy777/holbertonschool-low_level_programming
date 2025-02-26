@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_square - Dessine un carré sur le terminal
- * Description: Si la taille est supérieure à 0 la fonction imprime un carré
+ * print_square - Dessine un carré.
+ * @size: Taille du côté du carré.
  */
 void print_square(int size)
 {
@@ -23,4 +23,3 @@ void print_square(int size)
 		_putchar('\n');
 	}
 }
-
