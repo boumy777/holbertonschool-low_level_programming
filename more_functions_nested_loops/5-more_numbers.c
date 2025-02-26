@@ -8,23 +8,23 @@
  * Elle utilise `_putchar` seulement 3 fois.
  */
 void more_numbers(void)
-{	char numbers[] =
-		"01234567891011121314\n" \
-		"01234567891011121314\n" \
-		"01234567891011121314\n" \
-		"01234567891011121314\n" \
-		"01234567891011121314\n" \
-		"01234567891011121314\n" \
-		"01234567891011121314\n" \
-		"01234567891011121314\n" \
-		"01234567891011121314\n" \
-		"01234567891011121314\n";
+{	 int i, j;
+	char buffer[32]; /* Un buffer assez grand pour stocker 0-14 + '\n' */
+	char *ptr;
 
-	char *ptr = numbers;
-
-	while (*ptr)
+	for (i = 0; i < 10; i++)
 	{
-		_putchar(*ptr);
-		ptr++;
+		ptr = buffer;
+		for (j = 0; j <= 14; j++)
+		{
+			if (j >= 10)
+				*ptr++ = (j / 10) + '0'; /* Stocke la dizaine */
+			*ptr++ = (j % 10) + '0'; /* Stocke l’unité */
+		}
+		*ptr++ = '\n'; /* Ajoute le retour à la ligne */
+		*ptr = '\0'; /* Termine la chaîne */
+		/* Utilise _putchar seulement 3 fois */
+		for (ptr = buffer; *ptr; ptr++)
+			_putchar(*ptr);
 	}
 }
