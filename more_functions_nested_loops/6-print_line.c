@@ -9,18 +9,15 @@
  * la fonction imprime seulement un retour à la ligne.
  */
 void print_line(int n)
-{	 int i;  /* Déclare la variable i avant la boucle*/
-
+{	int i;  /* Déclare la variable i avant la boucle */
 	if (n <= 0)
 	{
 		_putchar('\n');
 		return;
 	}
-
-	for (i = 0; i < n; i++)  /* Utilise la variable i dans la boucle*/
-				 
+	for (i = 0; i < n; i++)  /* Utilise la variable i dans la boucle */
 	{
-	_putchar('_'); /* Affiche le caractère _ */
+		_putchar('_'); /* Affiche le caractère _ */
 	}
 	_putchar('\n'); /* Ajoute le retour à la ligne à la fin */
 }
