@@ -1,12 +1,11 @@
-#include "main.h"
+#include "main.h"  // Si tu utilises un fichier d'en-tête
+#include <stdio.h>
 
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
+// Déclaration de la fonction print_numbers
+void print_numbers(void);
+
 int main(void)
 {
-    times_table();
-    return (0);
+    print_numbers();
+    return 0;
 }

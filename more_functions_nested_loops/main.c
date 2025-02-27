@@ -1,8 +1,7 @@
 #include "main.h"
+#include <unistd.h>
 
-int main(void)
+void _putchar(char c)
 {
-    print_numbers();
-    return (0);
+    write(1, &c, 1);  /* Affiche un caractère sur la sortie standard*/
 }
-
