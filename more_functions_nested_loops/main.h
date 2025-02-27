@@ -1,7 +1,8 @@
-#ifndef MAIN_H
-#define MAIN_H
+#include <stdio.h>
 
-void print_line(int n);
-int _putchar(char c);
+int main(void)
+{
+    // Ton code ici
+    return (0);
+}
 
-#endif /* MAIN_H */
