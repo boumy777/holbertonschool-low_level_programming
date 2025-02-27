@@ -1,8 +1,6 @@
-#include <stdio.h>
+#ifndef MAIN_H
+#define MAIN_H
 
-int main(void)
-{
-    // Ton code ici
-    return (0);
-}
+int _putchar(char c);
 
+#endif /* MAIN_H */
