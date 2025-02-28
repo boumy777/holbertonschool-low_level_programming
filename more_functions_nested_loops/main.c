@@ -1,7 +1,7 @@
 #include "main.h"
-#include <unistd.h>
 
-void _putchar(char c)
+int main(void)
 {
-    write(1, &c, 1);  /* Affiche un caractère sur la sortie standard*/
+    times_table();
+    return 0;
 }
