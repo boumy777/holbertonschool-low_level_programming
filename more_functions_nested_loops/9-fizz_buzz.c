@@ -1,30 +1,38 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * times_table - Prints the 9 times table, starting with 0.
+ * main - Function that check the code
+ *
+ * Return: Always 0 (Succes)
  */
-void times_table(void)
+int main(void)
 {
-	int num, mult, prod;
+	int nbr;
 
-	for (num = 0; num <= 9; num++)
+	for (nbr = 1; nbr <= 100; nbr++)
 	{
-		_putchar('0');
-
-		for (mult = 1; mult <= 9; mult++)
+		if (nbr % 3 == 0 && nbr % 5 == 0)
 		{
-			_putchar(',');
-			_putchar(' ');
-
-			prod = num * mult;
-
-			if (prod <= 9)
-				_putchar(' ');
-			else
-				_putchar((prod / 10) + '0');
-
-			_putchar((prod % 10) + '0');
+			printf("FizzBuzz");
 		}
-		_putchar('\n');
+		else if (nbr % 3 == 0)
+		{
+			printf("Fizz");
+		}
+		else if (nbr % 5 == 0)
+		{
+			printf("Buzz");
+		}
+		else
+		{
+			printf("%d", nbr);
+		}
+
+		if (nbr < 100)
+		{
+			putchar(32);
+		}
 	}
+	putchar(10);
+	return (0);
 }

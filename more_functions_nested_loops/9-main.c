@@ -1,11 +1,12 @@
-#include "main.h"  // Si tu utilises un fichier d'en-tête
-#include <stdio.h>
+#include "main.h"
 
-/* Déclaration de la fonction print_numbers*/
-void print_numbers(void);
-
+/**
+ * main - Fonction principale qui teste print_fizz_buzz.
+ *
+ * Return: Toujours 0.
+ */
 int main(void)
 {
-    print_numbers();
-    return 0;
+    print_fizz_buzz();
+    return (0);
 }
