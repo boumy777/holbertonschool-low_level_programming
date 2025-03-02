@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-void swap_int(int *a, int *b);  /* Déclaration correcte*/
+int _putchar(char c);  /* Prototypage correct */
+void _puts(char *str);
 
 #endif /* MAIN_H */
