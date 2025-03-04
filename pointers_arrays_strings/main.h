@@ -3,5 +3,6 @@
 
 int _putchar(char c);  /* Prototypage correct */
 void _puts(char *str);
+char *_memset(char *s, char b, unsigned int n);
 
 #endif /* MAIN_H */
