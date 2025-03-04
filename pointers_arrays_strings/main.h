@@ -3,6 +3,6 @@
 
 int _putchar(char c);  /* Prototypage correct */
 void _puts(char *str);
-unsigned int _strspn(char *s, char *accept);
+char *_strpbrk(char *s, char *accept);
 
 #endif /* MAIN_H */
