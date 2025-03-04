@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h> /* Pour NULL */
 
 /**
  * _strchr - Localise un caractère dans une chaîne
