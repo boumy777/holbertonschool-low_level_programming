@@ -2,8 +2,11 @@
 #include <stddef.h> /* Pour NULL */
 
 /**
- * _strspn - Calcule la longueur du préfixe de `s` contenant uniquement `accept`
- * @s: La chaîne d'entrée
+ * _strspn - Mesure le préfixe de `s` composé uniquement de `accept`
+ * @s: Chaîne à analyser
+ * @accept: Ensemble de caractères autorisés
+ *
+ * Return: Nombre d'octets du préfixe valide
  */
 unsigned int _strspn(char *s, char *accept)
 {	unsigned int count = 0;
@@ -28,4 +31,3 @@ unsigned int _strspn(char *s, char *accept)
 
 	return (count);
 }
-
