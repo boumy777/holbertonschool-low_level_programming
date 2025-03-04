@@ -5,7 +5,7 @@
  * @s: Pointeur vers la chaîne de caractères
  * @c: Caractère à rechercher
  *
- * Return: Pointeur vers la première occurrence de `c` dans `s`, ou NULL si absent
+ * Return: Pointeur vers la première occurrence de `c` dans `s`, ou NULL
  */
 char *_strchr(char *s, char c)
 {
