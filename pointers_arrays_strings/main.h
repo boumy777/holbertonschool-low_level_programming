@@ -3,6 +3,6 @@
 
 int _putchar(char c);  /* Prototypage correct */
 void _puts(char *str);
-char *_strstr(char *haystack, char *needle);
+void print_chessboard(char (*a)[8]);
 
 #endif /* MAIN_H */
