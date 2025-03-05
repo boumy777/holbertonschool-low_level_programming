@@ -2,18 +2,19 @@
 #include <stdio.h>
 
 /**
- * print_chessboard - Affiche un échiquier 8x8.
- * @a: Tableau 2D contenant l'échiquier.
+ * print_diagsums - Affiche la somme des diagonales d'une matrice carrée.
+ * @a: Pointeur vers la première case du tableau.
+ * @size: Taille de la matrice (nombre de lignes/colonnes).
  */
-void print_chessboard(char (*a)[8])
-{	int i, j;
+void print_diagsums(int *a, int size)
+{
+	int i, sum1 = 0, sum2 = 0;
 
-	for (i = 0; i < 8; i++)
+	for (i = 0; i < size; i++)
 	{
-		for (j = 0; j < 8; j++)
-		{
-			printf("%c", a[i][j]);
-		}
-		printf("\n");
+		sum1 += a[i * size + i];         /* Diagonale principale */
+		sum2 += a[i * size + (size - 1 - i)]; /* Diagonale secondaire */
 	}
+
+	printf("%d, %d\n", sum1, sum2);
 }
