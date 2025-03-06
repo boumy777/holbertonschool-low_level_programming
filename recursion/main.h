@@ -3,6 +3,6 @@
 
 void _puts_recursion(char *s);  /* Function prototype for _puts_recursion */
 int _putchar(char c);           /* Function prototype for _putchar */
-int factorial(int n);
+int _pow_recursion(int x, int y);
 
 #endif
