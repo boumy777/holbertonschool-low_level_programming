@@ -1,15 +1,16 @@
 #include <stdio.h>
 
 /**
- * main - Point d'entrée du programme
- * @argc: Nombre d'arguments
- * @argv: Tableau des arguments (non utilisé)
+ * main - Prints the number of arguments passed to the program.
+ * @argc: Number of command line arguments.
+ * @argv: Array of command line arguments (unused).
  *
- * Return: Toujours 0 (Succès)
+ * Return: Always 0 (Success).
  */
 int main(int argc, char *argv[])
-{	(void)argv; /* Évite un avertissement de variable non utilisée */
-	
+{
+	(void)argv; /* Évite l'avertissement de paramètre non utilisé */
 	printf("%d\n", argc - 1);
+
 	return (0);
 }
