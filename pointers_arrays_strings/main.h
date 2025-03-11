@@ -3,6 +3,6 @@
 
 int _putchar(char c);  /* Prototypage correct */
 void _puts(char *str);
-void print_diagsums(int *a, int size);
+void _puts_recursion(char *s);
 
 #endif /* MAIN_H */
