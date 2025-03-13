@@ -53,6 +53,6 @@ char *str_concat(char *s1, char *s2)
 	/* Ajouter le caractère nul à la fin */
 	result[len1 + len2] = '\0';
 
-	return 0;
+	return (result);
 }
 
