@@ -1,29 +1,26 @@
 #include <stdlib.h>
-#include "main.h"
 
 /**
- * create_array - Creates an array of chars and initializes it
- *                with a given char
- * @size: The size of the array
- * @c: The char to initialize the array with
+ * free_grid - Libère un tableau 2D alloué avec alloc_grid.
+ * @grid: Le tableau 2D à libérer.
+ * @height: La hauteur du tableau.
  *
- * Return: Pointer to the array or NULL if size is 0 or if malloc fails
+ * Retour: Rien.
  */
-char *create_array(unsigned int size, char c)
+void free_grid(int **grid, int height)
 {
-	char *arr;
-	unsigned int i;
+	int i;  /* Déclaration de i avant la boucle */
 
-	if (size == 0)
-		return (NULL);
+	if (grid == NULL)
+		return;
 
-	arr = malloc(size * sizeof(char));
-	if (arr == NULL)
-		return (NULL);
+	/* Libérer chaque ligne */
+	for (i = 0; i < height; i++)
+	{
+		free(grid[i]);
+	}
 
-	for (i = 0; i < size; i++)
-		arr[i] = c;
-
-	return (arr);
+	/* Libérer le tableau principal */
+	free(grid);
 }
 
