@@ -1,26 +1,20 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <stddef.h>
 #include "lists.h"
 
 /**
- * print_list - Affiche tous les éléments d'une liste de type list_t
+ * list_len - Retourne le nombre d'éléments dans une liste `list_t`
  * @h: Pointeur vers la tête de la liste
  *
- * Return: Le nombre de nœuds
+ * Return: Nombre d'éléments dans la liste
  */
-size_t print_list(const list_t *h)
+size_t list_len(const list_t *h)
 {
 	size_t count = 0;
 
 	while (h)
 	{
-		if (h->str)
-			printf("[%d] %s\n", h->len, h->str);
-		else
-			printf("[0] (nil)\n");
-
-		h = h->next;
 		count++;
+		h = h->next;
 	}
 
 	return (count);
