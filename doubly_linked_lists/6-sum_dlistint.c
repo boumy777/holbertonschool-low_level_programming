@@ -1,23 +1,21 @@
 #include "lists.h"
-#include <stddef.h>
 
 /**
- * sum_dlistint - Calcule la somme des valeurs contenues dans une liste
- *                doublement chaînée.
- * @head: Pointeur vers le premier nœud de la liste.
+ * sum_dlistint - Returns the sum of all the data (n) in a dlistint_t list.
+ * @head: Pointer to the head of the list.
  *
- * Return: La somme des valeurs des nœuds. Retourne 0 si la liste est vide.
+ * Return: Sum of all data in the list, or 0 if the list is empty.
  */
 int sum_dlistint(dlistint_t *head)
 {
-	int somme = 0;
+	int sum = 0;
 
 	while (head)
 	{
-		somme += head->n;
+		sum += head->n;
 		head = head->next;
 	}
 
-	return (somme);
+	return (sum);
 }
 
